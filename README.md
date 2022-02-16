@@ -1,11 +1,11 @@
 1.//basic calculator operation
-import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-/* Name of the class has to be "Main" only if the class is public. */
-class calculator
-{
+    import java.util.*;
+    import java.lang.*;
+    import java.io.*;
+    /* Name of the class has to be "Main" only if the class is public. */
+         class calculator
+    {
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		int ch,a,b;
@@ -22,8 +22,8 @@ class calculator
 		System.out.println(a-b);
 		break;
 		case 3:
-System.out.println(a*b);
-break;
+                System.out.println(a*b);
+                break;
 		case 4:
 		System.out.println(a/b);
 		break;
@@ -34,17 +34,19 @@ break;
 		System.out.println("enter valid case");
 	
 	}
-}
-}
+     }
+    }
 
 2.//fiboonaci series 1to n
-import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-/* Name of the class has to be "Main" only if the class is public. */
-class fibbonaci
-{
+    import java.util.*;
+    import java.lang.*;
+    import java.io.*;
+
+    /* Name of the class has to be "Main" only if the class is public. */
+
+       class fibbonaci
+      {
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		int a=0,b=1,c,i,n;
@@ -58,22 +60,26 @@ class fibbonaci
 		   a=b;
 		   b=c;
 	   }
-   }
-}
+     }
+    }
 3.//factorial of a number
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+   
+    import java.util.*;
+    import java.lang.*;
+    import java.io.*;
 
-/* Name of the class has to be "Main" only if the class is public. */
-class fact
-{
-	static int factorial(int n){
+    /* Name of the class has to be "Main" only if the class is public. */
+
+    class fact
+    {
+    static int factorial(int n){
+		
 		if(n==0)
 		return 1;
 		else
-return(n*factorial(n-1));
-}
+
+                return(n*factorial(n-1));
+		}
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		int i,n,f=1;
@@ -84,14 +90,15 @@ return(n*factorial(n-1));
 		System.out.println("factorial of num is"+f);
 	}
 
-}
+    }
 4.//whether the given string is palindrome or not
-import java.util.Scanner;
+
+      import java.util.Scanner;
  
-class ChkPalindrome
-{
-   public static void main(String args[])
-   {
+      class ChkPalindrome
+     {
+    public static void main(String args[])
+    {
       String str, rev = "";
       Scanner sc = new Scanner(System.in);
  
@@ -108,15 +115,16 @@ class ChkPalindrome
       else
          System.out.println(str+" is not a palindrome");
  
-   }
-}
+     }
+    }
 5.//calculate permutation and combination of 2number
-import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-class A
-{
+    import java.util.*;
+     import java.lang.*;
+    import java.io.*;
+
+     class A
+    {
 	double fact(double n)
 	{
              	    double f=1;
@@ -144,11 +152,12 @@ class A
 	else
 			System.out.println("Please enter n>=r");		
 	}
-}
+    }
 6.//print diamond 💎pattern
-import java.util.Scanner;
-public class Diamond
-{
+ 
+    import java.util.Scanner;
+    public class Diamond
+    {
     public static void main(String args[]) 
     {
         int n, i, j, space = 1;
@@ -184,14 +193,15 @@ public class Diamond
             System.out.println("");
         }
     }
-}
+    }
 7.//reverse the letter present in the given string
-import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-public class stringreverse 
-{
+    import java.util.*;
+    import java.lang.*;
+    import java.io.*;
+
+    public class stringreverse 
+    {
 	public static void main(String[] args) 
 	{
 	String str = "Welcome To coding";
@@ -209,37 +219,39 @@ public class stringreverse
 		}
 
 8.//given array is mirror inverse or not
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-public class mirrorinverse
-{
-public static void main(String args[])
-{
-int count=0;
-int arr[]={3,4,5,0,1,2};
-for(int i=0;i<arr.length;i++)
-{
-if(arr[arr[i]]==i);
-{
+
+    import java.util.*;
+    import java.lang.*;
+    import java.io.*;
+    public class mirrorinverse
+    {
+    public static void main(String args[])
+    {
+      int count=0;
+      int arr[]={3,4,5,0,1,2};
+      for(int i=0;i<arr.length;i++)
+        {
+          if(arr[arr[i]]==i);
+        {
 	count++;
-}
-}
-if(count!=0)
-{
-System.out.println("the given array is mirror inverse");
-}
-else
-{
-System.out.println("the given qrray is not mirror inverse");
-}
-}
-}
+      }
+     }
+         if(count!=0)
+     {
+     System.out.println("the given array is mirror inverse");
+    }
+    else
+    {
+      System.out.println("the given qrray is not mirror inverse");
+     }
+    }
+     }
 9.//remove elements from an array list
-import java.util.ArrayList;  
+
+    import java.util.ArrayList;  
   
-public class RemoveMethod {  
-   public static void main(String[] args) {  
+    public class RemoveMethod {  
+    public static void main(String[] args) {  
       
       ArrayList<String> arr = new ArrayList<String>(5);   
       arr.add("abhit");  
@@ -255,12 +267,13 @@ public class RemoveMethod {
       for (String name : arr) {  
          System.out.println("Name is: " + name);  
       }  
-   }  
-}  
+        }  
+         }  
 
 10.//transpose of a given matrix
-public class Transpose  
-{  
+
+    public class Transpose  
+    {  
     public static void main(String[] args) {  
         int rows, cols;  
           
@@ -287,7 +300,7 @@ public class Transpose
             System.out.println();  
         }  
     }  
-}  
+    }  
 
 
 //Total 10 interesting programming 👍
